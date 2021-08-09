@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
-import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { Icon } from "../../common/Icon";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -42,16 +41,16 @@ const Header = ({ t }: any) => {
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("início")}>
-          <Span>{t("Início")}</Span>
+          <Span>{"Início"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("atuação")}>
-          <Span>{t("Atuação")}</Span>
+          <Span>{"Atuação"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("artigos")}>
-          <Span>{t("Artigos")}</Span>
+          <Span>{"Artigos"}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("contato")}>
-          <Span>{t("Contato")}</Span>
+          <Span>{"Contato"}</Span>
         </CustomNavLinkSmall>
         {/* <CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -112,4 +111,4 @@ const Header = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Header);
+export default Header;

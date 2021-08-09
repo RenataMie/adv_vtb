@@ -1,10 +1,8 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import { MailOutlined } from "@ant-design/icons";
 
-import i18n from "i18next";
 import {
   FooterSection,
   Title,
@@ -27,10 +25,8 @@ interface SocialLinkProps {
   src: string;
 }
 
-const Footer = ({ t }: any) => {
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+const Footer = () => {
+
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -123,4 +119,4 @@ const Footer = ({ t }: any) => {
   );
 };
 
-export default withTranslation()(Footer);
+export default Footer;

@@ -1,7 +1,6 @@
 import { Row, Col } from "antd";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
-import { DollarOutlined } from  "@ant-design/icons";
 import { MiddleBlockSection, Content, ContentWrapper, ButtonWrapper } from "./styles";
 
 interface MiddleBlockProps {
@@ -20,7 +19,7 @@ const MiddleBlock = ({ title, content, button }: MiddleBlockProps) => {
   // };
   return (
     <MiddleBlockSection>
-      <Slide direction="up">
+      <Slide direction="left">
         <Row justify="center" align="middle">
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
@@ -38,8 +37,7 @@ const MiddleBlock = ({ title, content, button }: MiddleBlockProps) => {
                         // onClick={() => `window.location.href=${item.link}`}
                       >
                         <a href={item.link} 
-                            style={{color: "black", 
-                          }}>
+                           >
                         
                         {item.title}
                         </a>

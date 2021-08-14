@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterSection = styled("footer")`
-  background: #FFD17A;
-  padding: 2.5rem 0;
+  background: grey;
+  padding: 2rem 0;
   width: 100%;
 `;
 
@@ -20,8 +20,9 @@ export const Title = styled("h4")`
 export const NavLink = styled(Link)`
   display: block;
   font-size: 1rem;
-  margin-bottom: 0.625rem;
+  /* margin-bottom: 0.625rem; */
   transition: all 0.2s ease-in-out;
+  color: black;
 
   &:hover,
   &:active,
@@ -89,13 +90,18 @@ export const Empty = styled("div")`
 `;
 
 export const FooterContainer = styled("div")`
-  max-width: 510px;
+  max-width: 500px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   transition: all 0.1s ease-in-out;
+  
+  a{
+    color:black;
+  }
 
   a {
     &:hover,
@@ -107,9 +113,8 @@ export const FooterContainer = styled("div")`
     }
   }
 
-  @media screen and (max-width: 769px) {
-    width: auto;
-    margin-left: 10px;
+  @media screen and (min-width: 890px) {
+   display:none;
 
     /* a:not(:last-child) {
       display: none;

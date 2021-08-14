@@ -12,8 +12,8 @@
     },
     {
       "title": "Dúvidas Whatsapp",
-      "color": "orange",
-      "link": "https://api.whatsapp.com/send?phone=5567984080991&text=Advocacia%20Vin%C3%ADcius%20Telles%20de%20Brito%2C%20como%20posso%20te%20ajudar%3F"
+      "color": "#383838",
+      "link": "https://api.whatsapp.com/send?phone=5567984120991&text=Advocacia%20Vin%C3%ADcius%20Telles%20de%20Brito%2C%20como%20posso%20te%20ajudar%3F%20"
     },
     {
       "title": "Suspensão e cassação de CNH",

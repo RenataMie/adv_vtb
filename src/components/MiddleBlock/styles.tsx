@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const MiddleBlockSection = styled("section")`
   position: relative;
-  padding-top: 1rem;
+  padding-top:-35px;
   text-align: center;
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 1024px) {
-    padding: 1.5rem 0 3rem;
+    padding: 0.5rem 0 3rem;
   }
 `;
 
@@ -32,13 +32,14 @@ export const ButtonWrapper = styled("div")`
   
 
   @media screen and (min-width: 1024px) {
-    max-width: 120%;
+    max-width: 100%;
     display:flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-top: -35px;
 
     button:first-child {
-    margin-left: -70px;
+    margin-left: 5px;
   }
   }
   

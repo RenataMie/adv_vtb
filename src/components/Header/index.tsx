@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import Container from "../../common/Container";
 import { Icon } from "../../common/Icon";
-import { SvgIcon } from "../../common/SvgIcon";
 import { LinkedinFilled, InstagramFilled, FacebookFilled, PhoneFilled } from "@ant-design/icons";
 
 // import { Button } from "../../common/Button";
@@ -31,35 +30,22 @@ const Header = ({ t }: any) => {
   };
 
   const MenuItem = () => {
-    const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
-    };
+  
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("início")}>
-          <Span>{"Início"}</Span>
+        <CustomNavLinkSmall >
+          <Span href="/">Início</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("atuação")}>
-          <Span>{"Atuação"}</Span>
+        <CustomNavLinkSmall >
+          <Span href="/atuacao"> Atuação </Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("artigos")}>
-          <Span>{"Artigos"}</Span>
+        <CustomNavLinkSmall >
+          <Span href="/artigos">Artigos</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("contato")}>
-          <Span>{"Contato"}</Span>
+        <CustomNavLinkSmall >
+          <Span href="/contato">Contato</Span>
         </CustomNavLinkSmall>
-        {/* <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        > */}
-          {/* <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
-        </CustomNavLinkSmall> */}
+    
       </>
     );
   };
@@ -68,16 +54,13 @@ const Header = ({ t }: any) => {
     <HeaderSection className="header">
 
         <Row className="location">
-        <PhoneFilled style={{ fontSize: '15px', color: "orange", paddingRight:"5px" }} />
+        <PhoneFilled style={{ fontSize: '15px', color: "grey", paddingRight:"5px" }} />
           <p>Campo Grande - MS | (67) 98412-0991  /  (67) 3204-0991</p>
 
           <div className="network">
-
-
-              <LinkedinFilled style={{ fontSize: '25px', color: "orange", paddingLeft:'25px' }}/>
-              <InstagramFilled style={{ fontSize: '25px', color: "orange", paddingLeft:'25px' }}/>
-              <FacebookFilled style={{ fontSize: '25px', color: "orange", paddingLeft:'25px' }}/>
-               
+              <a href="/"><LinkedinFilled style={{ fontSize: '23px', paddingLeft:'25px' }}/></a>
+              <a href="/"><InstagramFilled style={{ fontSize: '23px', paddingLeft:'25px' }}/></a>
+              <a href="/"><FacebookFilled style={{ fontSize: '23px', paddingLeft:'25px' }}/></a>
           </div>
         </Row>
       <Container>

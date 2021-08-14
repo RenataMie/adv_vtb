@@ -90,15 +90,15 @@ export const Outline = styled(MenuOutlined)<any>`
   font-size: 22px;
 `;
 
-export const Span = styled("span")`
+export const Span = styled("a")`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
   &:hover,
   &:active,
   &:focus {
-    color: orange;
+    color: black !important;
     text-underline-position: under;
-    text-decoration: orange solid underline;
+    text-decoration: black solid underline overline;
   }
 `;

@@ -2,6 +2,7 @@ import { Row, Col } from "antd";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import { MailOutlined } from "@ant-design/icons";
+import { LinkedinFilled, InstagramFilled, FacebookFilled, PhoneFilled } from "@ant-design/icons";
 
 import {
   FooterSection,
@@ -52,7 +53,7 @@ const Footer = () => {
               <Para>Edifício Empire Center</Para>
               <Para>Sala 96 - 9º andar</Para>
               <Para>Campo Grande - MS</Para>
-              <Para>79002-948</Para>
+              <Para style={{marginBottom:'10px'}}>79002-948</Para>
             </Col>
             {/* <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
@@ -66,23 +67,17 @@ const Footer = () => {
             </Col> */}
             <Col lg={10} md={10} sm={12} xs={12}>
              <MailOutlined style={{paddingLeft: "2px"}} />
-              <a href="viniciustellesdebritoadvocacia@gmail.com">
+              <NavLink to="viniciustellesdebritoadvocacia@gmail.com">
                viniciustellesdebritoadvocacia@gmail.com
-              </a>
+              </NavLink>
 
-
-              <SocialLink
-                href=""
-                src="github.svg"
-              />
-              <SocialLink
-                href=""
-                src="twitter.svg"
-              />
-              <SocialLink
-                href=""
-                src="linkedin.svg"
-              />
+            <FooterContainer>
+           
+              <a href="/"><LinkedinFilled style={{ fontSize: '23px' }}/></a>
+              <a href="/"><InstagramFilled style={{ fontSize: '23px', paddingLeft:'15px' }}/></a>
+              <a href="/"><FacebookFilled style={{ fontSize: '23px', paddingLeft:'15px' }}/></a>
+          
+              </FooterContainer>
             </Col>
            
           </Row>

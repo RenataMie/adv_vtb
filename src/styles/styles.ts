@@ -27,12 +27,12 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #f7f7f7;
         overflow-x: hidden;
     }
 
     a:hover {
-        color: #18216d;
+        color: white;
     }
 
     input,
@@ -59,7 +59,7 @@ export const Styles = createGlobalStyle`
     h6 {
         font-family: 'Hahmlet', serif;
         color: #000000;
-        font-size: 56px;
+        font-size: 40px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
@@ -88,10 +88,10 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
+        color: gray;
 
         :hover {
-            color: #2e186a;
+            color: white !important;
         }
     }
     
@@ -116,7 +116,11 @@ export const Styles = createGlobalStyle`
 
     .location {
         background-color: #000000;
-        padding: 10px 50px 8px 50px;
+        padding: 15px 50px 8px 50px;
+    }
+
+    .logoGrande {
+         padding:55px 40px 0 105px;
     }
 
     .header {
@@ -125,7 +129,8 @@ export const Styles = createGlobalStyle`
 
     .network{
         text-align: right;
-        padding-left: 850px;
+        position: relative;
+        left:540px;
 
         @media only screen and (max-width: 414px) {
           display: none;
@@ -133,18 +138,26 @@ export const Styles = createGlobalStyle`
     }
 
     @media only screen and (max-width: 414px) {
+
+        .logoGrande {
+            padding: 0;
+        }
           .logoGrande img{
               width:100%;
               height:100%;
-              padding: 0 auto;
+              padding-top: 40px;
           }
         }
 
         @media only screen and (max-width: 890px) {
+
+            .logoGrande {
+            padding: 0;
+        }
             .logoGrande img{
               width:100%;
               height:100%;
-              padding: 0 auto;
+              padding-top: 40px;
           }
         }
 `;

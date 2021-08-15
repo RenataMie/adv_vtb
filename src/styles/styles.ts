@@ -59,7 +59,7 @@ export const Styles = createGlobalStyle`
     h6 {
         font-family: 'Hahmlet', serif;
         color: #000000;
-        font-size: 40px;
+        font-size: 55px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
@@ -73,7 +73,7 @@ export const Styles = createGlobalStyle`
 
     p {
         color: #ffff;
-        font-size: 12px;        
+        font-size: 14px;        
         line-height: 1.41;
 
         @media only screen and (max-width: 414px) {
@@ -120,7 +120,7 @@ export const Styles = createGlobalStyle`
     }
 
     .logoGrande {
-         padding:55px 40px 0 105px;
+         padding:65px 40px 0 45px;
     }
 
     .header {
@@ -130,7 +130,7 @@ export const Styles = createGlobalStyle`
     .network{
         text-align: right;
         position: relative;
-        left:540px;
+        left:750px;
 
         @media only screen and (max-width: 414px) {
           display: none;

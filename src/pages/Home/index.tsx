@@ -17,7 +17,7 @@ const Home = () => {
       <ScrollToTop />
       <Fade direction="left">
       <Row id="intro" className="logoGrande" >
-      <Icon src="logo.png" width="90%" height="270px" />
+      <Icon src="logo.png" width="100%" height="auto" />
       </Row>
       </Fade>
      

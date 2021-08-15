@@ -11,12 +11,7 @@ interface MiddleBlockProps {
 }
 
 const MiddleBlock = ({ title, content, button }: MiddleBlockProps) => {
-  // const scrollTo = (id: string) => {
-  //   const element = document.getElementById(id) as HTMLDivElement;
-  //   element.scrollIntoView({
-  //     behavior: "smooth",
-  //   });
-  // };
+
   return (
     <MiddleBlockSection>
       <Slide direction="left">
@@ -34,7 +29,6 @@ const MiddleBlock = ({ title, content, button }: MiddleBlockProps) => {
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        // onClick={() => `window.location.href=${item.link}`}
                       >
                         <a href={item.link} 
                            >
@@ -46,11 +40,6 @@ const MiddleBlock = ({ title, content, button }: MiddleBlockProps) => {
                     );
                   })}
               </ButtonWrapper>
-              {/* {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
-                  {t(button)}
-                </Button>
-              )} */}
             </Col>
           </ContentWrapper>
         </Row>
